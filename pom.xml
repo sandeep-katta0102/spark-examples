@@ -11,7 +11,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <spark.version>3.0.1</spark.version>
+        <spark.version>3.2.1</spark.version>
         <hive.version>2.3.7</hive.version>
     </properties>
 
