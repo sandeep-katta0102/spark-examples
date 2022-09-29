@@ -1,4 +1,4 @@
-package com.databricks.extension
+package com.spark.extensions
 
 import org.apache.spark.sql.catalyst.expressions.Attribute
 import org.apache.spark.sql.catalyst.plans.logical.{LogicalPlan, UnaryNode}

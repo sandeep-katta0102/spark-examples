@@ -1,11 +1,11 @@
-package com.databricks.extension
+package com.spark.extensions
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.catalyst.catalog.CatalogTable
 import org.apache.spark.sql.catalyst.plans.logical.{Command, LogicalPlan}
 import org.apache.spark.sql.catalyst.rules.Rule
 import org.apache.spark.sql.execution.command.CreateDataSourceTableAsSelectCommand
-import org.apache.spark.sql.execution.datasources._
+import org.apache.spark.sql.execution.datasources.LogicalRelation
 
 import scala.util.{Failure, Success, Try}
 
