@@ -13,6 +13,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <spark.version>3.2.1</spark.version>
         <hive.version>2.3.7</hive.version>
+        <typesafe.version>1.4.2</typesafe.version>
     </properties>
 
     <dependencies>
@@ -69,6 +70,10 @@
                     <groupId>org.pentaho</groupId>
                     <artifactId>pentaho-aggdesigner-algorithm</artifactId>
                 </exclusion>
+                <exclusion>
+                    <groupId>org.apache.commons</groupId>
+                    <artifactId>commons-lang3</artifactId>
+                </exclusion>
             </exclusions>
         </dependency>
 
@@ -76,6 +81,12 @@
             <groupId>com.databricks</groupId>
             <artifactId>databricks-jdbc</artifactId>
             <version>2.6.25-1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe</groupId>
+            <artifactId>config</artifactId>
+            <version>${typesafe.version}</version>
         </dependency>
     </dependencies>
 
